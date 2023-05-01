@@ -4,7 +4,8 @@ export default function Sidebar() {
     const links = [{label: 'Dropdown', path: '/'},
                     {label: 'Accordion', path: '/accordion'},
                     {label: 'Buttons', path: '/buttons'},
-                    {label: 'Submit', path: '/modal'}
+                    {label: 'Submit', path: '/modal'},
+                    {label: 'Table', path: '/table'},
                     ]
     const renderedLinks = links.map((link)=> {
         return <Link key={link.label} to={link.path} className='mb-3'
